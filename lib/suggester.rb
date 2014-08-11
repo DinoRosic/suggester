@@ -1,0 +1,2 @@
+module Suggester
+end
