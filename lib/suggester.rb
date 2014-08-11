@@ -9,5 +9,6 @@ module Suggester
     autoload :Bing,   'suggester/api/bing'
     autoload :Yahoo,  'suggester/api/yahoo'
     autoload :Amazon, 'suggester/api/amazon'
+    autoload :Ebay,   'suggester/api/ebay'
   end
 end
