@@ -8,5 +8,6 @@ module Suggester
     autoload :Google, 'suggester/api/google'
     autoload :Bing,   'suggester/api/bing'
     autoload :Yahoo,  'suggester/api/yahoo'
+    autoload :Amazon, 'suggester/api/amazon'
   end
 end
