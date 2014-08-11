@@ -3,7 +3,8 @@ require 'faraday_middleware'
 
 module Suggester
   autoload :Connection, 'suggester/connection'
-  autoload :Base, 'suggester/base'
+  autoload :Base,       'suggester/base'
+  autoload :Client,     'suggester/client'
   module Api
     autoload :Google,    'suggester/api/google'
     autoload :Bing,      'suggester/api/bing'

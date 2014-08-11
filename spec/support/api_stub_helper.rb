@@ -8,4 +8,20 @@ module ApiStubHelper
 
     expect(Suggester::Connection).to receive(:connection).and_return(connection)
   end
+
+  def api_stubs(apis)
+    apis.each do |provider, value|
+      expect(provider_klass(provider)).to receive(:new).and_return(suggester(value))
+    end
+  end
+
+  private
+
+  def provider_klass(provider)
+    Suggester::Api.const_get(provider.capitalize)
+  end
+
+  def suggester(value)
+    double(:suggester, get: value)
+  end
 end
