@@ -7,5 +7,6 @@ module Suggester
   module Api
     autoload :Google, 'suggester/api/google'
     autoload :Bing,   'suggester/api/bing'
+    autoload :Yahoo,  'suggester/api/yahoo'
   end
 end
