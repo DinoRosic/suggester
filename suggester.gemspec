@@ -18,5 +18,6 @@ Gem::Specification.new do |s|
   s.test_files = Dir['test/**/*']
 
   s.add_dependency('faraday', '0.9.0')
+  s.add_dependency('faraday_middleware', '~> 0.9.0')
   s.add_development_dependency('rspec', '~> 3.0.0')
 end
